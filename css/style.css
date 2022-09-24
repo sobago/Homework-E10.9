@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(to right, rgba(77, 211, 255, 0.5), rgba(236, 60, 255, 0.5));
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(190, 190, 190, 0.5);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 5px 15px 5px 5px;
+}
+
+.header-container nav {
+    justify-self: end;
+}
+
+.header-container .header-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header-container nav ul {
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.header-container nav ul li {
+    list-style-type: none;
+}
+
+.wrapper {
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    grid-template-rows: max-content;
+}
+
+
+aside {
+    padding: 5px 20px 5px 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-content: start;
+}
+
+
+aside .photo img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+aside .name {
+    height: fit-content;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    background-color: rgb(128, 128, 128, 0.2);
+    border-radius: 10px;
+    grid-column: span 2;
+}
+
+aside .general-text {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: rgb(128, 128, 128, 0.2);
+    border-radius: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+main p {
+    padding-bottom: 5px;
+}
+
+main .about-me {
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+article {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+main .experience {
+    font-size: 14px;
+    position: relative;
+    margin: 0 auto;
+}
+
+main .experience::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-image: linear-gradient(to bottom, rgb(77, 211, 255), rgb(236, 60, 255));
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 5px);
+    margin-left: -3px;
+}
+
+
+main .experience ul li {
+    background-color: rgb(128, 128, 128, 0.2);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+    width: calc(50% - 40px);
+    position: relative;
+}
+
+main .experience ul li:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 50%;
+    top: 50%;
+    right: -31px;
+    z-index: 1;
+}
+
+main .experience ul li:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 50%;
+    top: 50%;
+    left: -28px;
+    z-index: 1;
+}
+
+main .experience ul li:nth-child(odd) {
+    left: 0;
+}
+
+main .experience ul li:nth-child(even) {
+    left: calc(50% + 15px);
+}
+
+main .experience ul li span{
+    display: block;
+}
+
+main .experience ul li button{
+    background-color: rgb(128, 128, 128, 0.2);
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+main .experience ul li button:active {
+    background-color: rgb(128, 128, 128, 0.4)
+}
+
+main .experience ul li p{
+    display: block;
+}
+
+
+article .date {
+    font-size: 12px;
+    font-style: italic;
+}
+
+article .education {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+article .education ul {
+    position: relative;
+    list-style: none;
+}
+
+article .education .edu_items {
+    background-color: rgb(128, 128, 128, 0.2);
+    padding: 5px 20px 5px 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+    position: relative;
+}
+
+article .education ul li span {
+    display: block;
+}
+
+article .education ul li .study_place {
+    font-weight: 700;
+}
+
+.languages ul {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.languages h3 {
+    margin-bottom: 10px;
+}
+
+article .education .languages ul li span {
+    display: inline;
+}
+
+.languages .lang_icon img {
+    width: 16px;
+    height: 16px;
+    display: inline;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+footer div img {
+    width: 16px;
+    height: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 5px;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+@media screen and (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: max-content;
+        position: relative;
+    }
+
+    header {
+        grid-column: span 2;
+    }
+
+    aside {
+        min-width: 250px;
+        max-width: 300px;
+        padding: 5px;
+    }
+
+    aside .name {
+        grid-column: auto;
+        display: grid;
+        justify-items: center;
+    }
+
+    aside .photo img {
+        min-width: 250px;
+    }
+
+    aside .general-text {
+        margin-left: 0;
+    }
+
+    .vert-divider {
+        width: 2px;
+        height: 100%;
+        top: 0;
+        left: 50px;
+        background-image: linear-gradient(to bottom, rgb(77, 211, 255), rgb(236, 60, 255));
+    }
+
+    .content {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 2px auto;
+        position: relative;
+    }
+
+    footer {
+        grid-column: span 2;
+    }
+}
