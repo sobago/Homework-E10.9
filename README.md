@@ -6,6 +6,6 @@
     Резюме на HTML/CSS/JS
     <br/>
     <br/>
-    <a href="https://sobago.github.io/Homework-E10.9/">View</a>
+    <a href="https://sobago.github.io/Homework-E10.9/" target="_blank">View</a>
   </p>
 </p>
