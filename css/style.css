@@ -114,7 +114,7 @@ main .about-me {
     margin-right: 15px;
 }
 
-article {
+section {
     margin-top: 20px;
 }
 
@@ -207,22 +207,22 @@ main .experience ul li p{
 }
 
 
-article .date {
+section .date {
     font-size: 12px;
     font-style: italic;
 }
 
-article .education {
+section .education {
     margin-right: 15px;
     font-size: 14px;
 }
 
-article .education ul {
+section .education ul {
     position: relative;
     list-style: none;
 }
 
-article .education .edu_items {
+section .education .edu_items {
     background-color: rgb(128, 128, 128, 0.2);
     padding: 5px 20px 5px 5px;
     border-radius: 10px;
@@ -231,11 +231,11 @@ article .education .edu_items {
     position: relative;
 }
 
-article .education ul li span {
+section .education ul li span {
     display: block;
 }
 
-article .education ul li .study_place {
+section .education ul li .study_place {
     font-weight: 700;
 }
 
@@ -251,7 +251,7 @@ article .education ul li .study_place {
     margin-bottom: 10px;
 }
 
-article .education .languages ul li span {
+section .education .languages ul li span {
     display: inline;
 }
 
